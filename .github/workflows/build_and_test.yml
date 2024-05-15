@@ -10,5 +10,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: Lint code
+      - name: install dependancies
+        run: npm ci
+      - name: Lint
         run: npm run lint
