@@ -1,0 +1,8 @@
+name: Issue-trigger
+on: issues
+jobs:
+  Issue-even-trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: output events on issue found
+        run: echo "${{ github.event }}"
